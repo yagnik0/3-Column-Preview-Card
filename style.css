@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-3-col {
+    max-width: 75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.content{
+    padding: 3.2rem;   
+}
+
+.icon-style {
+    margin: 1.8rem 0;
+}
+
+.heading-style {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    color: hsl(0, 0%, 95%);
+}
+
+.para-style {
+    margin-bottom: 6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.btn-learn:link,
+.btn-learn:visited{
+    text-decoration: none;
+    padding: 1.2rem 2.8rem;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    transition: all 0.3s;
+    
+}
+
+.btn-learn:hover,
+.btn-learn:active{
+    background-color: rgb(158, 199, 236);
+}
+
+/* Styling Background Color*/
+
+.orange {
+    background-color:hsl(31, 77%, 52%) ;
+}
+
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.green {
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Styling Button text */
+
+.orange-text{
+    color: hsl(31, 77%, 52%);
+}
+
+.cyan-text {
+    color: hsl(184, 100%, 22%);
+}
+
+.green-text{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 755px){
+    .grid-3-col{
+        width: 30rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 2rem;
+    }
+
+    .icon-style {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .heading-style {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .para-style {
+        margin-bottom: 3rem;
+    }
+
+    .btn-learn {
+        padding: 1rem 2.4rem;
+    }
+
+    .grid-3-col > * {
+        width: 85%;
+    }
+}
