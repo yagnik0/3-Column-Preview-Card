@@ -97,22 +97,21 @@ body {
     color: hsl(179, 100%, 13%);
 }
 
-@media only screen and (max-width: 755px){
+@media only screen and (max-width: 750px){
     .grid-3-col{
-        width: 30rem;
+        min-width: 30rem;
+        width: 25%;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
     .icon-style {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+        margin: 1rem 0;
     }
 
     .heading-style {
         font-size: 2rem;
-        margin-top: 0;
     }
 
     .para-style {
@@ -122,4 +121,11 @@ body {
     .btn-learn {
         padding: 1rem 2.4rem;
     }
+    .container {
+        height: auto;
+    }
 }
+
+
+
+
